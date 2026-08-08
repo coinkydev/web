@@ -6,6 +6,8 @@
 
 import 'package:jaspr/client.dart';
 
+import 'package:coinky_web/sections/privacy_policy.dart'
+    deferred as _privacy_policy;
 import 'package:coinky_web/app.dart' deferred as _app;
 
 /// Default [ClientOptions] for use with your Jaspr project.
@@ -25,5 +27,11 @@ import 'package:coinky_web/app.dart' deferred as _app;
 /// }
 /// ```
 ClientOptions get defaultClientOptions => ClientOptions(
-  clients: {'app': ClientLoader((p) => _app.App(), loader: _app.loadLibrary)},
+  clients: {
+    'app': ClientLoader((p) => _app.App(), loader: _app.loadLibrary),
+    'privacy_policy': ClientLoader(
+      (p) => _privacy_policy.PrivacyPolicy(),
+      loader: _privacy_policy.loadLibrary,
+    ),
+  },
 );

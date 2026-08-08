@@ -1,5 +1,6 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
+import 'package:universal_web/web.dart' as web;
 
 import '../i18n/i18n.dart';
 
@@ -16,7 +17,15 @@ class SiteFooter extends StatelessComponent {
           p([.text(t(context, 'footer_desc'))]),
         ]),
         div(classes: 'footer-links', [
-          a(href: '#', [.text(t(context, 'footer_privacy'))]),
+          a(
+            href: '#privacy',
+            onClick: () {
+              if (kIsWeb) {
+                web.window.location.hash = '#privacy';
+              }
+            },
+            [.text(t(context, 'footer_privacy'))],
+          ),
           a(href: '#', [.text(t(context, 'footer_terms'))]),
           a(href: 'https://github.com/jamesldr/financas', target: Target.blank, attributes: {'rel': 'noopener'}, [.text('GitHub')]),
         ]),

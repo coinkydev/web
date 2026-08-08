@@ -14,3 +14,15 @@ upgrade:
 	@echo "Upgrading dependencies..."
 	dart pub upgrade --major-versions --tighten
 	@echo "Done!"
+
+jbuild:
+	@echo "Building..."
+	jaspr build
+	@echo "Done!"
+
+jrun:
+	@echo "Running..."
+	jaspr serve
+	@echo "Done!"
+
+

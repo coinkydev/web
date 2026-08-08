@@ -1,5 +1,6 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
+import 'package:universal_web/web.dart' as web;
 
 import '../i18n/i18n.dart';
 
@@ -14,14 +15,39 @@ class Navbar extends StatelessComponent {
 
     return header(classes: 'navbar', [
       div(classes: 'nav-container', [
-        a(classes: 'brand', href: '#', [
-          img(src: './app_icon.png', alt: 'Coinky Logo', attributes: {'width': '32', 'height': '32', 'style': 'border-radius: 8px;'}),
-          span(classes: 'brand-name', [.text('Coinky')]),
-        ]),
+        a(
+          classes: 'brand',
+          href: '#',
+          onClick: () {
+            if (kIsWeb) web.window.location.hash = '';
+          },
+          [
+            img(src: './app_icon.png', alt: 'Coinky Logo', attributes: {'width': '32', 'height': '32', 'style': 'border-radius: 8px;'}),
+            span(classes: 'brand-name', [.text('Coinky')]),
+          ],
+        ),
         nav(classes: 'nav-links', [
-          a(href: '#features', [.text(t(context, 'nav_features'))]),
-          a(href: '#showcase', [.text(t(context, 'nav_experience'))]),
-          a(href: '#faq', [.text(t(context, 'nav_faq'))]),
+          a(
+            href: '#features',
+            onClick: () {
+              if (kIsWeb && web.window.location.hash == '#privacy') web.window.location.hash = '#features';
+            },
+            [.text(t(context, 'nav_features'))],
+          ),
+          a(
+            href: '#showcase',
+            onClick: () {
+              if (kIsWeb && web.window.location.hash == '#privacy') web.window.location.hash = '#showcase';
+            },
+            [.text(t(context, 'nav_experience'))],
+          ),
+          a(
+            href: '#faq',
+            onClick: () {
+              if (kIsWeb && web.window.location.hash == '#privacy') web.window.location.hash = '#faq';
+            },
+            [.text(t(context, 'nav_faq'))],
+          ),
         ]),
         div(classes: 'nav-actions', [
           select(

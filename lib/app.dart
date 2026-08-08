@@ -1,4 +1,5 @@
 import 'package:jaspr/jaspr.dart';
+import 'package:universal_web/js_interop.dart';
 import 'package:universal_web/web.dart' as web;
 
 import 'i18n/i18n.dart';
@@ -23,15 +24,21 @@ class App extends StatefulComponent {
 class AppState extends State<App> {
   String _lang = defaultLanguage;
   AppThemeMode _themeMode = AppThemeMode.dark;
+  String _hash = '';
 
   @override
   void initState() {
     super.initState();
-    // The original site never persists theme across reloads (it always
-    // starts from the `class="dark"` hardcoded in index.html), only
-    // language is persisted — mirrored here via localStorage below.
     if (kIsWeb) {
       _lang = _resolveInitialLanguage();
+      _hash = web.window.location.hash;
+      final updateHash = (web.Event event) {
+        setState(() {
+          _hash = web.window.location.hash;
+        });
+      }.toJS;
+      web.window.addEventListener('hashchange', updateHash);
+      web.window.addEventListener('popstate', updateHash);
     }
   }
 
@@ -61,6 +68,8 @@ class AppState extends State<App> {
 
   @override
   Component build(BuildContext context) {
+    final isPrivacyPage = _hash.contains('privacy');
+
     return Component.fragment([
       // Declaratively keeps `<html class="dark|light" lang="...">` in sync
       // with state. `Document.html` works both during server pre-render
@@ -74,11 +83,15 @@ class AppState extends State<App> {
         toggleTheme: _toggleTheme,
         child: Component.fragment([
           const Navbar(),
-          const Hero(),
-          const Features(),
-          const Showcase(),
-          const Faq(),
-          const Cta(),
+          if (isPrivacyPage)
+            const PrivacyPolicy()
+          else ...[
+            const Hero(),
+            const Features(),
+            const Showcase(),
+            const Faq(),
+            const Cta(),
+          ],
           const SiteFooter(),
         ]),
       ),
