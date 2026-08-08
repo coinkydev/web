@@ -6,12 +6,36 @@ import '../i18n/i18n.dart';
 
 /// Header / navigation bar. Reads and mutates language + theme via
 /// [I18nScope] — see `lib/i18n/i18n_state.dart` for the pattern.
-class Navbar extends StatelessComponent {
+class Navbar extends StatefulComponent {
   const Navbar({super.key});
 
   @override
+  State<Navbar> createState() => _NavbarState();
+}
+
+class _NavbarState extends State<Navbar> {
+  bool _isMenuOpen = false;
+
+  void _toggleMenu() {
+    setState(() {
+      _isMenuOpen = !_isMenuOpen;
+    });
+  }
+
+  void _closeMenu() {
+    if (_isMenuOpen) {
+      setState(() {
+        _isMenuOpen = false;
+      });
+    }
+  }
+
+  @override
   Component build(BuildContext context) {
-    final scope = I18nScope.of(context);    void scrollTo(String id) {
+    final scope = I18nScope.of(context);
+
+    void scrollTo(String id) {
+      _closeMenu();
       if (!kIsWeb) return;
       final currentHash = web.window.location.hash;
       if (currentHash.contains('privacy') || currentHash.contains('form')) {
@@ -32,18 +56,38 @@ class Navbar extends StatelessComponent {
       }
     }
 
-    return header(classes: 'navbar', [
+    return header(classes: 'navbar${_isMenuOpen ? ' menu-open' : ''}', [
       div(classes: 'nav-container', [
-        a(
-          classes: 'brand',
-          href: '#',
-          onClick: () => scrollTo(''),
-          [
-            img(src: './app_icon.png', alt: 'Coinky Logo', attributes: {'width': '32', 'height': '32', 'style': 'border-radius: 8px;'}),
-            span(classes: 'brand-name', [.text('Coinky')]),
-          ],
-        ),
-        nav(classes: 'nav-links', [
+        div(classes: 'nav-brand-group', [
+          button(
+            classes: 'btn-icon menu-toggle',
+            attributes: {'aria-label': _isMenuOpen ? 'Close menu' : 'Open menu'},
+            onClick: _toggleMenu,
+            [
+              if (!_isMenuOpen)
+                svg(viewBox: '0 0 24 24', attributes: {'width': '22', 'height': '22', 'fill': 'none', 'stroke': 'currentColor', 'stroke-width': '2'}, [
+                  line(x1: '3', y1: '12', x2: '21', y2: '12', []),
+                  line(x1: '3', y1: '6', x2: '21', y2: '6', []),
+                  line(x1: '3', y1: '18', x2: '21', y2: '18', []),
+                ])
+              else
+                svg(viewBox: '0 0 24 24', attributes: {'width': '22', 'height': '22', 'fill': 'none', 'stroke': 'currentColor', 'stroke-width': '2'}, [
+                  line(x1: '18', y1: '6', x2: '6', y2: '18', []),
+                  line(x1: '6', y1: '6', x2: '18', y2: '18', []),
+                ]),
+            ],
+          ),
+          a(
+            classes: 'brand',
+            href: '#',
+            onClick: () => scrollTo(''),
+            [
+              img(src: './app_icon.png', alt: 'Coinky Logo', attributes: {'width': '32', 'height': '32', 'style': 'border-radius: 8px;'}),
+              span(classes: 'brand-name', [.text('Coinky')]),
+            ],
+          ),
+        ]),
+        nav(classes: 'nav-links desktop-only', [
           a(
             href: '#features',
             onClick: () => scrollTo('features'),
@@ -62,6 +106,7 @@ class Navbar extends StatelessComponent {
           a(
             href: '#form',
             onClick: () {
+              _closeMenu();
               if (kIsWeb) {
                 web.window.location.hash = '#form';
               }
@@ -117,9 +162,51 @@ class Navbar extends StatelessComponent {
               ]),
             ],
           ),
-          a(classes: 'btn btn-primary', href: '#download', [.text(t(context, 'nav_download'))]),
+          a(
+            classes: 'btn btn-primary nav-download-btn',
+            href: '#download',
+            attributes: {'aria-label': t(context, 'nav_download')},
+            onClick: _closeMenu,
+            [
+              svg(viewBox: '0 0 24 24', attributes: {'width': '20', 'height': '20', 'fill': 'none', 'stroke': 'currentColor', 'stroke-width': '2'}, [
+                path(d: 'M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4', []),
+                polyline(points: '7 10 12 15 17 10', []),
+                line(x1: '12', y1: '15', x2: '12', y2: '3', []),
+              ]),
+            ],
+          ),
         ]),
       ]),
+      if (_isMenuOpen)
+        div(classes: 'mobile-menu', [
+          nav(classes: 'mobile-nav-links', [
+            a(
+              href: '#features',
+              onClick: () => scrollTo('features'),
+              [.text(t(context, 'nav_features'))],
+            ),
+            a(
+              href: '#showcase',
+              onClick: () => scrollTo('showcase'),
+              [.text(t(context, 'nav_experience'))],
+            ),
+            a(
+              href: '#faq',
+              onClick: () => scrollTo('faq'),
+              [.text(t(context, 'nav_faq'))],
+            ),
+            a(
+              href: '#form',
+              onClick: () {
+                _closeMenu();
+                if (kIsWeb) {
+                  web.window.location.hash = '#form';
+                }
+              },
+              [.text(t(context, 'nav_contact'))],
+            ),
+          ]),
+        ]),
     ]);
   }
 }

@@ -97,7 +97,7 @@ const Map<String, dynamic> ptTranslations = {
   'cta_subtitle':
       'Junte-se a milhares de pessoas gerenciando despesas com 100% de privacidade e sem assinaturas abusivas.',
   'cta_btn': 'Baixar para iOS',
-  'footer_desc': 'Controle financeiro pessoal com foco em privacidade.',
+  'footer_desc': 'Controle financeiro offline e privado.',
   'footer_privacy': 'Política de Privacidade',
   'footer_contact': 'Fale Conosco',
   'footer_terms': 'Termos de Uso',

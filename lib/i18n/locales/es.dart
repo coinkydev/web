@@ -98,7 +98,7 @@ const Map<String, dynamic> esTranslations = {
   'cta_subtitle':
       'Únete a miles de usuarios que gestionan sus gastos con 100% de privacidad y sin suscripciones recurrentes.',
   'cta_btn': 'Descargar para iOS',
-  'footer_desc': 'Control de finanzas personales enfocado en la privacidad.',
+  'footer_desc': 'Control de dinero offline y privado.',
   'footer_privacy': 'Política de Privacidad',
   'footer_contact': 'Contacto',
   'footer_terms': 'Términos de Servicio',

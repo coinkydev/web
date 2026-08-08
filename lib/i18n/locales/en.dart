@@ -97,7 +97,7 @@ const Map<String, dynamic> enTranslations = {
   'cta_title': 'Ready to Take Control of Your Money Privately?',
   'cta_subtitle': 'Join thousands of users managing expenses with 100% privacy and zero subscription traps.',
   'cta_btn': 'Download for iOS',
-  'footer_desc': 'Privacy-focused personal finance tracking.',
+  'footer_desc': 'Offline & private money tracker.',
   'footer_privacy': 'Privacy Policy',
   'footer_contact': 'Contact Us',
   'footer_terms': 'Terms of Service',
