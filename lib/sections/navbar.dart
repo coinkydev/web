@@ -11,16 +11,33 @@ class Navbar extends StatelessComponent {
 
   @override
   Component build(BuildContext context) {
-    final scope = I18nScope.of(context);
+    final scope = I18nScope.of(context);    void scrollTo(String id) {
+      if (!kIsWeb) return;
+      final currentHash = web.window.location.hash;
+      if (currentHash.contains('privacy') || currentHash.contains('form')) {
+        web.window.location.hash = id.isEmpty ? '#' : '#$id';
+      } else {
+        if (id.isEmpty) {
+          web.window.scrollTo(web.ScrollToOptions(top: 0));
+          web.window.location.hash = '';
+        } else {
+          final target = web.document.getElementById(id);
+          if (target != null) {
+            target.scrollIntoView();
+            web.window.location.hash = '#$id';
+          } else {
+            web.window.location.hash = '#$id';
+          }
+        }
+      }
+    }
 
     return header(classes: 'navbar', [
       div(classes: 'nav-container', [
         a(
           classes: 'brand',
           href: '#',
-          onClick: () {
-            if (kIsWeb) web.window.location.hash = '';
-          },
+          onClick: () => scrollTo(''),
           [
             img(src: './app_icon.png', alt: 'Coinky Logo', attributes: {'width': '32', 'height': '32', 'style': 'border-radius: 8px;'}),
             span(classes: 'brand-name', [.text('Coinky')]),
@@ -29,29 +46,17 @@ class Navbar extends StatelessComponent {
         nav(classes: 'nav-links', [
           a(
             href: '#features',
-            onClick: () {
-              if (kIsWeb && (web.window.location.hash == '#privacy' || web.window.location.hash == '#form')) {
-                web.window.location.hash = '#features';
-              }
-            },
+            onClick: () => scrollTo('features'),
             [.text(t(context, 'nav_features'))],
           ),
           a(
             href: '#showcase',
-            onClick: () {
-              if (kIsWeb && (web.window.location.hash == '#privacy' || web.window.location.hash == '#form')) {
-                web.window.location.hash = '#showcase';
-              }
-            },
+            onClick: () => scrollTo('showcase'),
             [.text(t(context, 'nav_experience'))],
           ),
           a(
             href: '#faq',
-            onClick: () {
-              if (kIsWeb && (web.window.location.hash == '#privacy' || web.window.location.hash == '#form')) {
-                web.window.location.hash = '#faq';
-              }
-            },
+            onClick: () => scrollTo('faq'),
             [.text(t(context, 'nav_faq'))],
           ),
           a(

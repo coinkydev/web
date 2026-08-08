@@ -34,12 +34,39 @@ class AppState extends State<App> {
       _hash = web.window.location.hash;
       if (_hash.contains('privacy') || _hash.contains('form')) {
         web.window.scrollTo(web.ScrollToOptions(top: 0));
+      } else if (_hash.isNotEmpty) {
+        final id = _hash.replaceAll('#', '');
+        Future.delayed(const Duration(milliseconds: 100), () {
+          final target = web.document.getElementById(id);
+          target?.scrollIntoView();
+        });
       }
       final updateHash = (web.Event event) {
+        final newHash = web.window.location.hash;
+        final wasSubpage = _hash.contains('privacy') || _hash.contains('form');
+        final isSubpage = newHash.contains('privacy') || newHash.contains('form');
+
         setState(() {
-          _hash = web.window.location.hash;
+          _hash = newHash;
         });
-        web.window.scrollTo(web.ScrollToOptions(top: 0));
+
+        if (isSubpage) {
+          web.window.scrollTo(web.ScrollToOptions(top: 0));
+        } else if (wasSubpage) {
+          final id = newHash.replaceAll('#', '');
+          Future.delayed(const Duration(milliseconds: 50), () {
+            if (id.isNotEmpty) {
+              final target = web.document.getElementById(id);
+              if (target != null) {
+                target.scrollIntoView();
+              } else {
+                web.window.scrollTo(web.ScrollToOptions(top: 0));
+              }
+            } else {
+              web.window.scrollTo(web.ScrollToOptions(top: 0));
+            }
+          });
+        }
       }.toJS;
       web.window.addEventListener('hashchange', updateHash);
       web.window.addEventListener('popstate', updateHash);
