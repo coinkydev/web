@@ -32,10 +32,14 @@ class AppState extends State<App> {
     if (kIsWeb) {
       _lang = _resolveInitialLanguage();
       _hash = web.window.location.hash;
+      if (_hash.contains('privacy')) {
+        web.window.scrollTo(web.ScrollToOptions(top: 0));
+      }
       final updateHash = (web.Event event) {
         setState(() {
           _hash = web.window.location.hash;
         });
+        web.window.scrollTo(web.ScrollToOptions(top: 0));
       }.toJS;
       web.window.addEventListener('hashchange', updateHash);
       web.window.addEventListener('popstate', updateHash);
