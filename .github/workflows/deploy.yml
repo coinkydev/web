@@ -39,7 +39,7 @@ jobs:
         run: dart pub global activate jaspr_cli
 
       - name: Build
-        run: dart pub global run jaspr_cli:jaspr build --dart-define JASPR_BASE=/coinky/
+        run: dart pub global run jaspr_cli:jaspr build --dart-define JASPR_BASE=/web/
 
       - name: Setup Pages
         uses: actions/configure-pages@v4
