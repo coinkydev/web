@@ -1,0 +1,27 @@
+import 'package:jaspr/dom.dart';
+import 'package:jaspr/jaspr.dart';
+
+import '../i18n/i18n.dart';
+
+/// Site footer.
+class SiteFooter extends StatelessComponent {
+  const SiteFooter({super.key});
+
+  @override
+  Component build(BuildContext context) {
+    return footer(classes: 'footer', [
+      div(classes: 'container footer-container', [
+        div(classes: 'footer-brand', [
+          span(classes: 'brand-name', [.text('Coinky')]),
+          p([.text(t(context, 'footer_desc'))]),
+        ]),
+        div(classes: 'footer-links', [
+          a(href: '#', [.text(t(context, 'footer_privacy'))]),
+          a(href: '#', [.text(t(context, 'footer_terms'))]),
+          a(href: 'https://github.com/jamesldr/financas', target: Target.blank, attributes: {'rel': 'noopener'}, [.text('GitHub')]),
+        ]),
+        div(classes: 'footer-copy', [.text(t(context, 'footer_rights'))]),
+      ]),
+    ]);
+  }
+}
