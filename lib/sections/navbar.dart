@@ -71,7 +71,7 @@ class Navbar extends StatelessComponent {
         ]),
         div(classes: 'nav-actions', [
           select(
-            classes: 'lang-select',
+            classes: 'lang-select lang-select-desktop',
             value: scope.lang,
             attributes: {'aria-label': 'Select language'},
             onChange: (values) {
@@ -81,6 +81,19 @@ class Navbar extends StatelessComponent {
               option(value: 'en', [.text('🇺🇸 English')]),
               option(value: 'pt', [.text('🇧🇷 Português')]),
               option(value: 'es', [.text('🇪🇸 Español')]),
+            ],
+          ),
+          select(
+            classes: 'lang-select lang-select-mobile',
+            value: scope.lang,
+            attributes: {'aria-label': 'Select language'},
+            onChange: (values) {
+              if (values.isNotEmpty) scope.setLanguage(values.first);
+            },
+            [
+              option(value: 'en', [.text('🇺🇸 EN')]),
+              option(value: 'pt', [.text('🇧🇷 PT')]),
+              option(value: 'es', [.text('🇪🇸 ES')]),
             ],
           ),
           button(
