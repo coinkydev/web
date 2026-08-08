@@ -10,7 +10,8 @@ const Map<String, dynamic> enTranslations = {
   'hero_title_2': 'Without Giving Up Your Privacy',
   'hero_subtitle':
       'Track expenses, control category budgets, manage credit card statement cycles, and import bank OFX statements effortlessly—all stored locally on your device.',
-  'hero_cta_appstore': 'App Store Download',
+  'hero_cta_appstore': 'Download',
+  'coming_soon': 'Coming Soon',
   'hero_cta_tour': 'See App Tour',
   'hero_highlight_1': 'No Accounts or Servers Required',
   'hero_highlight_2': 'Instant Bank Statements (.OFX)',

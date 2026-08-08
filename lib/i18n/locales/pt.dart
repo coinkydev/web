@@ -10,7 +10,8 @@ const Map<String, dynamic> ptTranslations = {
   'hero_title_2': 'Sem Abrir Mão da Sua Privacidade',
   'hero_subtitle':
       'Controle despesas, orçamentos por categoria, faturas de cartão de crédito e importe extratos bancários OFX facilmente—tudo salvo localmente no seu dispositivo.',
-  'hero_cta_appstore': 'Baixar na App Store',
+  'hero_cta_appstore': 'Baixar',
+  'coming_soon': 'Em Breve',
   'hero_cta_tour': 'Ver Tour do App',
   'hero_highlight_1': 'Sem Necessidade de Conta ou Servidores',
   'hero_highlight_2': 'Extratos Bancários Instantâneos (.OFX)',

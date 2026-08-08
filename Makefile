@@ -29,3 +29,32 @@ jkill:
 	@echo "Killing processes on port 8080..."
 	@lsof -ti:8080 | xargs kill -9 2>/dev/null || true
 	@echo "Done!"
+
+
+
+brbc:
+	@echo "Running build runner..."
+	@MAKE brc
+	@MAKE brb
+	@echo "Done!"
+
+brb:
+	@echo "Running build runner..."
+	dart run build_runner build
+	@echo "Done!"
+
+brw:
+	@echo "Watching build runner..."
+	dart run build_runner watch
+	@echo "Done!"
+
+brwc:
+	@echo "Watching build runner..."
+	@MAKE brc
+	@MAKE brw
+	@echo "Done!"
+
+brc:
+	@echo "Running build runner clean..."
+	dart run build_runner clean
+	@echo "Done!"

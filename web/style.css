@@ -103,6 +103,46 @@ body {
   box-shadow: 0 6px 20px rgba(129, 199, 132, 0.4);
 }
 
+.coming-soon-btn-wrapper {
+  display: inline-flex;
+}
+
+.coming-soon-btn {
+  position: relative;
+  overflow: visible;
+}
+
+.coming-soon-badge {
+  display: inline-flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 3px 8px;
+  border-radius: 9999px;
+  background: rgba(245, 158, 11, 0.25);
+  border: 1px solid rgba(245, 158, 11, 0.6);
+  color: #F59E0B;
+  font-size: 0.725rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  white-space: nowrap;
+}
+
+.light .coming-soon-badge {
+  background: rgba(217, 119, 6, 0.15);
+  border: 1px solid rgba(217, 119, 6, 0.4);
+  color: #B45309;
+}
+
+.btn.disabled {
+  opacity: 0.85;
+  cursor: default;
+}
+
+.btn.disabled:hover {
+  transform: none;
+}
+
 .btn-secondary {
   background: var(--bg-secondary);
   color: var(--text-main);

@@ -10,7 +10,8 @@ const Map<String, dynamic> esTranslations = {
   'hero_title_2': 'Sin Renunciar a Tu Privacidad',
   'hero_subtitle':
       'Rastrea gastos, controla presupuestos por categoría, gestiona ciclos de tarjetas de crédito e importa extractos bancarios OFX fácilmente—todo guardado localmente en tu dispositivo.',
-  'hero_cta_appstore': 'Descargar en App Store',
+  'hero_cta_appstore': 'Descargar',
+  'coming_soon': 'Próximamente',
   'hero_cta_tour': 'Ver Tour de la App',
   'hero_highlight_1': 'Sin Cuentas ni Servidores Externos',
   'hero_highlight_2': 'Extractos Bancarios Instantáneos (.OFX)',

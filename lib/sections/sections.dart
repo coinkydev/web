@@ -1,3 +1,4 @@
+export 'coming_soon_button.dart';
 export 'cta.dart';
 export 'faq.dart';
 export 'features.dart';
