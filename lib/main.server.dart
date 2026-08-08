@@ -30,7 +30,7 @@ void main() {
   // so they can respond to language/theme state changes.
   runApp(
     Document(
-      base: const String.fromEnvironment('JASPR_BASE', defaultValue: '/coinky/'),
+      base: const String.fromEnvironment('JASPR_BASE', defaultValue: '/'),
       title: 'Coinky | Privacy-First Personal Finance & Expense Tracker',
       meta: {
         'description':
@@ -44,6 +44,9 @@ void main() {
           rel: 'stylesheet',
           href: 'https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap',
         ),
+        // Favicon / App Icon
+        link(rel: 'icon', type: 'image/png', href: 'app_icon.png'),
+        link(rel: 'apple-touch-icon', href: 'app_icon.png'),
         // Site stylesheet, copied verbatim from the original site (do not edit inline;
         // edit web/style.css instead, kept in sync with ../style.css).
         link(rel: 'stylesheet', href: 'style.css'),
