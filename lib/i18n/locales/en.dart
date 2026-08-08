@@ -4,7 +4,7 @@ const Map<String, dynamic> enTranslations = {
   'nav_experience': 'App Tour',
   'nav_faq': 'FAQ',
   'nav_contact': 'Contact',
-  'nav_download': 'Download Free',
+  'nav_download': 'Download',
   'hero_badge': '100% Offline & Private Money Tracker',
   'hero_title_1': 'Master Your Money',
   'hero_title_2': 'Without Giving Up Your Privacy',

@@ -4,7 +4,7 @@ const Map<String, dynamic> esTranslations = {
   'nav_experience': 'Vista Previa',
   'nav_faq': 'Preguntas Frecuentes',
   'nav_contact': 'Contacto',
-  'nav_download': 'Descargar Gratis',
+  'nav_download': 'Descargar',
   'hero_badge': 'Control de Dinero 100% Offline y Privado',
   'hero_title_1': 'Domina Tu Dinero',
   'hero_title_2': 'Sin Renunciar a Tu Privacidad',

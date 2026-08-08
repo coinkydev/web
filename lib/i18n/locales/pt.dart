@@ -4,7 +4,7 @@ const Map<String, dynamic> ptTranslations = {
   'nav_experience': 'Conheça o App',
   'nav_faq': 'Dúvidas',
   'nav_contact': 'Contato',
-  'nav_download': 'Baixar Grátis',
+  'nav_download': 'Baixar',
   'hero_badge': 'Gerenciador Financeiro 100% Offline e Privado',
   'hero_title_1': 'Domine Seu Dinheiro',
   'hero_title_2': 'Sem Abrir Mão da Sua Privacidade',
