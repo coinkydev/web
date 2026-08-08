@@ -54,6 +54,15 @@ class Navbar extends StatelessComponent {
             },
             [.text(t(context, 'nav_faq'))],
           ),
+          a(
+            href: '#form',
+            onClick: () {
+              if (kIsWeb) {
+                web.window.location.hash = '#form';
+              }
+            },
+            [.text(t(context, 'nav_contact'))],
+          ),
         ]),
         div(classes: 'nav-actions', [
           select(
@@ -64,9 +73,9 @@ class Navbar extends StatelessComponent {
               if (values.isNotEmpty) scope.setLanguage(values.first);
             },
             [
-              option(value: 'en', [.text('🇺🇸 EN')]),
-              option(value: 'pt', [.text('🇧🇷 PT')]),
-              option(value: 'es', [.text('🇪🇸 ES')]),
+              option(value: 'en', [.text('🇺🇸 English')]),
+              option(value: 'pt', [.text('🇧🇷 Português')]),
+              option(value: 'es', [.text('🇪🇸 Español')]),
             ],
           ),
           button(

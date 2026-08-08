@@ -1,8 +1,9 @@
 /// English translations for Coinky marketing site.
 const Map<String, dynamic> enTranslations = {
   'nav_features': 'Features',
-  'nav_experience': 'App Experience',
+  'nav_experience': 'App Tour',
   'nav_faq': 'FAQ',
+  'nav_contact': 'Contact',
   'nav_download': 'Download Free',
   'hero_badge': '100% Offline & Private Money Tracker',
   'hero_title_1': 'Master Your Money',
@@ -97,6 +98,7 @@ const Map<String, dynamic> enTranslations = {
   'cta_btn': 'Download for iOS',
   'footer_desc': 'Privacy-focused personal finance tracking.',
   'footer_privacy': 'Privacy Policy',
+  'footer_contact': 'Contact Us',
   'footer_terms': 'Terms of Service',
   'footer_rights': '© 2026 Coinky. All rights reserved.',
 };

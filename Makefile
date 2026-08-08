@@ -25,4 +25,7 @@ jrun:
 	jaspr serve
 	@echo "Done!"
 
-
+jkill:
+	@echo "Killing processes on port 8080..."
+	@lsof -ti:8080 | xargs kill -9 2>/dev/null || true
+	@echo "Done!"

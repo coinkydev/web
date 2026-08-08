@@ -26,8 +26,16 @@ class SiteFooter extends StatelessComponent {
             },
             [.text(t(context, 'footer_privacy'))],
           ),
+          a(
+            href: '#form',
+            onClick: () {
+              if (kIsWeb) {
+                web.window.location.hash = '#form';
+              }
+            },
+            [.text(t(context, 'footer_contact'))],
+          ),
           a(href: '#', [.text(t(context, 'footer_terms'))]),
-          a(href: 'https://github.com/jamesldr/financas', target: Target.blank, attributes: {'rel': 'noopener'}, [.text('GitHub')]),
         ]),
         div(classes: 'footer-copy', [.text(t(context, 'footer_rights'))]),
       ]),

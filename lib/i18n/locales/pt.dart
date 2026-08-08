@@ -1,8 +1,9 @@
 /// Portuguese translations for Coinky marketing site.
 const Map<String, dynamic> ptTranslations = {
-  'nav_features': 'Recursos',
-  'nav_experience': 'Experiência',
-  'nav_faq': 'Perguntas Frequentes',
+  'nav_features': 'Funcionalidades',
+  'nav_experience': 'Conheça o App',
+  'nav_faq': 'Dúvidas',
+  'nav_contact': 'Contato',
   'nav_download': 'Baixar Grátis',
   'hero_badge': 'Gerenciador Financeiro 100% Offline e Privado',
   'hero_title_1': 'Domine Seu Dinheiro',
@@ -97,6 +98,7 @@ const Map<String, dynamic> ptTranslations = {
   'cta_btn': 'Baixar para iOS',
   'footer_desc': 'Controle financeiro pessoal com foco em privacidade.',
   'footer_privacy': 'Política de Privacidade',
+  'footer_contact': 'Fale Conosco',
   'footer_terms': 'Termos de Uso',
   'footer_rights': '© 2026 Coinky. Todos os direitos reservados.',
 };
