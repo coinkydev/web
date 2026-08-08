@@ -1,0 +1,102 @@
+/// English translations for Coinky marketing site.
+const Map<String, dynamic> enTranslations = {
+  'nav_features': 'Features',
+  'nav_experience': 'App Experience',
+  'nav_faq': 'FAQ',
+  'nav_download': 'Download Free',
+  'hero_badge': '100% Offline & Private Money Tracker',
+  'hero_title_1': 'Master Your Money',
+  'hero_title_2': 'Without Giving Up Your Privacy',
+  'hero_subtitle':
+      'Track expenses, control category budgets, manage credit card statement cycles, and import bank OFX statements effortlessly—all stored locally on your device.',
+  'hero_cta_appstore': 'App Store Download',
+  'hero_cta_tour': 'See App Tour',
+  'hero_highlight_1': 'No Accounts or Servers Required',
+  'hero_highlight_2': 'Instant Bank Statements (.OFX)',
+  'hero_highlight_3': 'FaceID / TouchID Lock',
+  'features_title': 'Built for Total Financial Control',
+  'features_subtitle': 'Everything you need to reach your money goals cleanly and privately.',
+  'feature_1_title': 'Credit Card Statements',
+  'feature_1_desc':
+      'Track closing dates, due dates, monthly statement limits, and get warnings for unpaid previous invoices.',
+  'feature_2_title': 'Monthly Reports & Analytics',
+  'feature_2_desc':
+      'Clear category breakdowns, liquidity status, projected end-of-month balances, and interactive financial charts.',
+  'feature_3_title': 'OFX Bank Statement Import',
+  'feature_3_desc':
+      'Drag and drop standard bank statement files (.OFX) to log transactions automatically without manual data entry.',
+  'feature_4_title': 'Smart Budget Alerts',
+  'feature_4_desc':
+      'Set spending caps per category and receive scheduled local reminders when approaching or exceeding limits.',
+  'feature_5_title': 'Offline & Biometric Lock',
+  'feature_5_desc':
+      'Your financial records stay strictly stored locally on your device with native FaceID / TouchID biometric protection.',
+  'feature_6_title': 'Multilingual & Themes',
+  'feature_6_desc':
+      'Full support for English, Portuguese, and Spanish, plus dynamic light and dark theme customizations.',
+  'showcase_title': 'Designed for Simplicity & Speed',
+  'showcase_subtitle': "Take an interactive look at Coinky's polished iOS interface.",
+  'showcase_tab_1': 'Dashboard Overview',
+  'showcase_tab_2': 'Credit Cards',
+  'showcase_tab_3': 'Reports & Analytics',
+  'showcase_tab_4': 'Preferences & Lock',
+  'showcase_data': {
+    '01': {
+      'title': 'Dashboard Overview',
+      'desc':
+          'Get an instant snap of your net balance, total income vs expenses, upcoming bills, and quick category breakdowns.',
+      'list': [
+        'Instant real-time balance overview',
+        'Slidable transaction management',
+        'Quick income & expense logging',
+      ],
+    },
+    '02': {
+      'title': 'Credit Card Billing Cycles',
+      'desc':
+          'Never miss a credit card statement again. Monitor closing dates, due dates, and unpaid invoice warnings.',
+      'list': [
+        'Track multiple credit cards',
+        'Statement closing & due date alerts',
+        'Unpaid invoice warnings from past cycles',
+      ],
+    },
+    '03': {
+      'title': 'Monthly Reports & Analytics',
+      'desc':
+          'Understand your spending habits with deep analytics, category breakdowns, liquidity indicators, and projected balances.',
+      'list': [
+        'Liquidity meter & projected end-of-month balance',
+        'Visual category distribution charts',
+        'Budget vs actual spending breakdown',
+      ],
+    },
+    '04': {
+      'title': 'Preferences & Biometric Lock',
+      'desc':
+          'Customize your application experience with dynamic themes and protect your financial privacy with biometric authentication.',
+      'list': [
+        'Native FaceID / TouchID biometric app lock',
+        'Dynamic color themes',
+        'Light and dark mode preferences',
+      ],
+    },
+  },
+  'faq_title': 'Frequently Asked Questions',
+  'faq_1_q': 'Is my financial data uploaded to any server?',
+  'faq_1_a':
+      'No. Coinky is built local-first. Your transactions, credit cards, and bank statements remain 100% stored in an encrypted local database on your device. We do not collect or store your private financial transactions.',
+  'faq_2_q': 'How does OFX bank import work?',
+  'faq_2_a':
+      'Most banks allow you to export your monthly statement as an .OFX file. Simply download the file from your bank app/web portal and share/open it in Coinky. The app automatically parses and deduplicates transactions instantly.',
+  'faq_3_q': 'Can I lock the app with Face ID or Touch ID?',
+  'faq_3_a':
+      'Yes! Coinky integrates natively with iOS local authentication (FaceID/TouchID) so your sensitive numbers remain hidden from prying eyes whenever the app is closed.',
+  'cta_title': 'Ready to Take Control of Your Money Privately?',
+  'cta_subtitle': 'Join thousands of users managing expenses with 100% privacy and zero subscription traps.',
+  'cta_btn': 'Download for iOS',
+  'footer_desc': 'Privacy-focused personal finance tracking.',
+  'footer_privacy': 'Privacy Policy',
+  'footer_terms': 'Terms of Service',
+  'footer_rights': '© 2026 Coinky. All rights reserved.',
+};
