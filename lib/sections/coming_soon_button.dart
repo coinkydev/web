@@ -29,14 +29,14 @@ class ComingSoonButton extends StatelessComponent {
   Component build(BuildContext context) {
     if (!isComingSoon) {
       return a(classes: classes, href: href, [
-        if (icon != null) icon!,
+        ?icon,
         span([.text(label)]),
       ]);
     }
 
     return div(classes: 'coming-soon-btn-wrapper', [
       a(classes: '$classes disabled coming-soon-btn', href: 'javascript:void(0)', [
-        if (icon != null) icon!,
+        ?icon,
         span([.text(label)]),
         span(classes: 'coming-soon-badge', [.text(t(context, badgeTextKey))]),
       ]),
