@@ -780,3 +780,65 @@ input[type="range"] {
   }
 }
 
+/* Embedded Form / Custom Contact Form */
+.embedded-form-wrapper {
+  width: 100%;
+  border-radius: var(--radius-sm);
+  overflow: hidden;
+  background: #ffffff;
+}
+
+.embedded-form-iframe {
+  width: 100%;
+  min-height: 800px;
+  border: none;
+  display: block;
+}
+
+.custom-contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 680px;
+  margin-top: 12px;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-label {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-main);
+}
+
+.form-control {
+  width: 100%;
+  padding: 14px 16px;
+  border-radius: var(--radius-sm);
+  background: var(--bg-secondary);
+  border: 1px solid var(--border-color);
+  color: var(--text-main);
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.form-control:focus {
+  border-color: var(--primary-light);
+  box-shadow: 0 0 0 3px var(--primary-glow);
+}
+
+.form-textarea {
+  resize: vertical;
+  min-height: 140px;
+  line-height: 1.6;
+}
+
+.form-actions {
+  margin-top: 8px;
+}
+

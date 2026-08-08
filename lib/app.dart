@@ -32,7 +32,7 @@ class AppState extends State<App> {
     if (kIsWeb) {
       _lang = _resolveInitialLanguage();
       _hash = web.window.location.hash;
-      if (_hash.contains('privacy')) {
+      if (_hash.contains('privacy') || _hash.contains('form')) {
         web.window.scrollTo(web.ScrollToOptions(top: 0));
       }
       final updateHash = (web.Event event) {
@@ -73,6 +73,7 @@ class AppState extends State<App> {
   @override
   Component build(BuildContext context) {
     final isPrivacyPage = _hash.contains('privacy');
+    final isFormPage = _hash.contains('form');
 
     return Component.fragment([
       // Declaratively keeps `<html class="dark|light" lang="...">` in sync
@@ -89,6 +90,8 @@ class AppState extends State<App> {
           const Navbar(),
           if (isPrivacyPage)
             const PrivacyPolicy()
+          else if (isFormPage)
+            const FormSection()
           else ...[
             const Hero(),
             const Features(),

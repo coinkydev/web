@@ -85,7 +85,13 @@ class PrivacyPolicy extends StatelessComponent {
       h2([.text('7. Contact')]),
       p([
         .text('Questions about this policy: '),
-        a(href: 'https://forms.gle/4ntBYZ8d6ZF43y5D7', target: Target.blank, attributes: {'rel': 'noopener'}, [.text('Contact Form')]),
+        a(
+          href: '#form',
+          onClick: () {
+            if (kIsWeb) web.window.location.hash = '#form';
+          },
+          [.text('Contact Form')],
+        ),
       ]),
     ];
   }
@@ -130,7 +136,13 @@ class PrivacyPolicy extends StatelessComponent {
       h2([.text('7. Contato')]),
       p([
         .text('Dúvidas sobre esta política: '),
-        a(href: 'https://forms.gle/4ntBYZ8d6ZF43y5D7', target: Target.blank, attributes: {'rel': 'noopener'}, [.text('Formulário de Contato')]),
+        a(
+          href: '#form',
+          onClick: () {
+            if (kIsWeb) web.window.location.hash = '#form';
+          },
+          [.text('Formulário de Contato')],
+        ),
       ]),
     ];
   }
@@ -175,7 +187,13 @@ class PrivacyPolicy extends StatelessComponent {
       h2([.text('7. Contacto')]),
       p([
         .text('Preguntas sobre esta política: '),
-        a(href: 'https://forms.gle/4ntBYZ8d6ZF43y5D7', target: Target.blank, attributes: {'rel': 'noopener'}, [.text('Formulario de Contacto')]),
+        a(
+          href: '#form',
+          onClick: () {
+            if (kIsWeb) web.window.location.hash = '#form';
+          },
+          [.text('Formulario de Contacto')],
+        ),
       ]),
     ];
   }

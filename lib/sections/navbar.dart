@@ -30,21 +30,27 @@ class Navbar extends StatelessComponent {
           a(
             href: '#features',
             onClick: () {
-              if (kIsWeb && web.window.location.hash == '#privacy') web.window.location.hash = '#features';
+              if (kIsWeb && (web.window.location.hash == '#privacy' || web.window.location.hash == '#form')) {
+                web.window.location.hash = '#features';
+              }
             },
             [.text(t(context, 'nav_features'))],
           ),
           a(
             href: '#showcase',
             onClick: () {
-              if (kIsWeb && web.window.location.hash == '#privacy') web.window.location.hash = '#showcase';
+              if (kIsWeb && (web.window.location.hash == '#privacy' || web.window.location.hash == '#form')) {
+                web.window.location.hash = '#showcase';
+              }
             },
             [.text(t(context, 'nav_experience'))],
           ),
           a(
             href: '#faq',
             onClick: () {
-              if (kIsWeb && web.window.location.hash == '#privacy') web.window.location.hash = '#faq';
+              if (kIsWeb && (web.window.location.hash == '#privacy' || web.window.location.hash == '#form')) {
+                web.window.location.hash = '#faq';
+              }
             },
             [.text(t(context, 'nav_faq'))],
           ),
