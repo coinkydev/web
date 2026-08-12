@@ -59,9 +59,7 @@ class _FormSectionState extends State<FormSection> {
   Component build(BuildContext context) {
     final lang = I18nScope.of(context).lang;
 
-    final title = lang == 'pt'
-        ? 'Fale Conosco'
-        : (lang == 'es' ? 'Contacto' : 'Contact Us');
+    final title = lang == 'pt' ? 'Fale Conosco' : (lang == 'es' ? 'Contacto' : 'Contact Us');
     final backText = lang == 'pt'
         ? 'Voltar para a página inicial'
         : (lang == 'es' ? 'Volver al inicio' : 'Back to home');
@@ -71,9 +69,7 @@ class _FormSectionState extends State<FormSection> {
     final messageLabel = lang == 'pt'
         ? 'Descreva a sua mensagem ou problema'
         : (lang == 'es' ? 'Describa su mensaje o problema' : 'Describe the issue or message');
-    final submitText = lang == 'pt'
-        ? 'Enviar por E-mail'
-        : (lang == 'es' ? 'Enviar por Correo' : 'Send via E-mail');
+    final submitText = lang == 'pt' ? 'Enviar por E-mail' : (lang == 'es' ? 'Enviar por Correo' : 'Send via E-mail');
 
     return section(id: 'form', classes: 'privacy-section', [
       div(classes: 'container privacy-container', [
@@ -117,7 +113,13 @@ class _FormSectionState extends State<FormSection> {
                     ),
                     option(
                       value: 'feature',
-                      [.text(lang == 'pt' ? 'Sugestão de Recurso' : (lang == 'es' ? 'Sugerencia de Función' : 'Feature Request'))],
+                      [
+                        .text(
+                          lang == 'pt'
+                              ? 'Sugestão de Recurso'
+                              : (lang == 'es' ? 'Sugerencia de Función' : 'Feature Request'),
+                        ),
+                      ],
                     ),
                     option(
                       value: 'question',
@@ -134,12 +136,16 @@ class _FormSectionState extends State<FormSection> {
                 label(classes: 'form-label', [.text('$messageLabel *')]),
                 textarea(
                   classes: 'form-control form-textarea',
-                  attributes: {'required': 'true', 'rows': '6', 'placeholder': lang == 'pt' ? 'Escreva aqui...' : 'Type here...'},
+                  attributes: {
+                    'required': 'true',
+                    'rows': '6',
+                    'placeholder': lang == 'pt' ? 'Escreva aqui...' : 'Type here...',
+                  },
                   events: {
                     'input': (web.Event event) {
                       final target = event.target as web.HTMLTextAreaElement;
                       _message = target.value;
-                    }
+                    },
                   },
                   [.text(_message)],
                 ),

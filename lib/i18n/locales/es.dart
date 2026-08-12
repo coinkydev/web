@@ -55,8 +55,7 @@ const Map<String, dynamic> esTranslations = {
     },
     '02': {
       'title': 'Ciclos de Tarjetas de Crédito',
-      'desc':
-          'No vuelvas a olvidar la fecha de pago de tu tarjeta. Monitorea cierres, vencimientos y alertas de pago.',
+      'desc': 'No vuelvas a olvidar la fecha de pago de tu tarjeta. Monitorea cierres, vencimientos y alertas de pago.',
       'list': [
         'Gestiona múltiples tarjetas de crédito',
         'Alertas de cierre y vencimiento de estado de cuenta',

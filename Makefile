@@ -30,17 +30,17 @@ jkill:
 	@lsof -ti:8080 | xargs kill -9 2>/dev/null || true
 	@echo "Done!"
 
-
-
 brbc:
 	@echo "Running build runner..."
 	@MAKE brc
 	@MAKE brb
+	make format
 	@echo "Done!"
 
 brb:
 	@echo "Running build runner..."
 	dart run build_runner build
+	make format
 	@echo "Done!"
 
 brw:
@@ -57,4 +57,10 @@ brwc:
 brc:
 	@echo "Running build runner clean..."
 	dart run build_runner clean
+	@echo "Done!"
+
+format:
+	@echo "Formatting code..."
+	dart format .
+	dart fix --apply
 	@echo "Done!"

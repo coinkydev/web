@@ -61,7 +61,9 @@ class _ShowcaseState extends State<Showcase> {
             p([.text(data['desc'] as String)]),
             ul(
               classes: 'feature-list',
-              [for (final item in data['list'] as List) li([.text(item as String)])],
+              [
+                for (final item in data['list'] as List) li([.text(item as String)]),
+              ],
             ),
           ]),
         ]),
