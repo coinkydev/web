@@ -33,8 +33,7 @@ void main() {
       base: const String.fromEnvironment('JASPR_BASE', defaultValue: '/'),
       title: 'Coinky | Privacy-First Personal Finance & Expense Tracker',
       meta: {
-        'description':
-            'Master your money with Coinky: an offline-first, privacy-focused personal finance app featuring OFX bank import, credit card bill cycles, budget alerts, and biometric lock.',
+        'description': 'Master your money with Coinky: an offline-first, privacy-focused personal finance app featuring OFX bank import, credit card bill cycles, budget alerts, and biometric lock.',
       },
       head: [
         // Google Fonts preconnect + stylesheet, ported verbatim from index.html.

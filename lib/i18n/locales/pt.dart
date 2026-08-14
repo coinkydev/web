@@ -8,8 +8,7 @@ const Map<String, dynamic> ptTranslations = {
   'hero_badge': 'Gerenciador Financeiro 100% Offline e Privado',
   'hero_title_1': 'Domine Seu Dinheiro',
   'hero_title_2': 'Sem Abrir Mão da Sua Privacidade',
-  'hero_subtitle':
-      'Controle despesas, orçamentos por categoria, faturas de cartão de crédito e importe extratos bancários OFX facilmente—tudo salvo localmente no seu dispositivo.',
+  'hero_subtitle': 'Controle despesas, orçamentos por categoria, faturas de cartão de crédito e importe extratos bancários OFX facilmente—tudo salvo localmente no seu dispositivo.',
   'hero_cta_appstore': 'Baixar',
   'coming_soon': 'Em Breve',
   'hero_cta_tour': 'Ver Tour do App',
@@ -19,20 +18,15 @@ const Map<String, dynamic> ptTranslations = {
   'features_title': 'Construído para Total Controle Financeiro',
   'features_subtitle': 'Tudo o que você precisa para atingir suas metas financeiras com clareza e privacidade.',
   'feature_1_title': 'Faturas de Cartão de Crédito',
-  'feature_1_desc':
-      'Acompanhe datas de fechamento, vencimento, limites da fatura mensal e receba alertas sobre faturas anteriores pendentes.',
+  'feature_1_desc': 'Acompanhe datas de fechamento, vencimento, limites da fatura mensal e receba alertas sobre faturas anteriores pendentes.',
   'feature_2_title': 'Relatórios Mensais & Análises',
-  'feature_2_desc':
-      'Detalhamento claro por categorias, indicador de liquidez, saldo projetado para o fim do mês e gráficos financeiros interativos.',
+  'feature_2_desc': 'Detalhamento claro por categorias, indicador de liquidez, saldo projetado para o fim do mês e gráficos financeiros interativos.',
   'feature_3_title': 'Importação de Extrato OFX',
-  'feature_3_desc':
-      'Arraste e solte arquivos de extrato bancário (.OFX) para registrar transações automaticamente sem digitação manual.',
+  'feature_3_desc': 'Arraste e solte arquivos de extrato bancário (.OFX) para registrar transações automaticamente sem digitação manual.',
   'feature_4_title': 'Alertas Inteligentes de Orçamento',
-  'feature_4_desc':
-      'Defina limites de gastos por categoria e receba lembretes locais agendados ao se aproximar ou ultrapassar os limites.',
+  'feature_4_desc': 'Defina limites de gastos por categoria e receba lembretes locais agendados ao se aproximar ou ultrapassar os limites.',
   'feature_5_title': 'Modo Offline & Trava Biométrica',
-  'feature_5_desc':
-      'Seus dados financeiros permanecem estritamente salvos no seu aparelho com proteção biométrica nativa FaceID / TouchID.',
+  'feature_5_desc': 'Seus dados financeiros permanecem estritamente salvos no seu aparelho com proteção biométrica nativa FaceID / TouchID.',
   'feature_6_title': 'Multilíngue & Temas',
   'feature_6_desc':
       'Suporte completo para Inglês, Português e Espanhol, além de personalização de temas claro e escuro.',
@@ -54,8 +48,7 @@ const Map<String, dynamic> ptTranslations = {
     },
     '02': {
       'title': 'Ciclos de Fatura de Cartão',
-      'desc':
-          'Nunca mais perca a data de vencimento do seu cartão. Monitore fechamento, vencimento e avisos de faturas em aberto.',
+      'desc': 'Nunca mais perca a data de vencimento do seu cartão. Monitore fechamento, vencimento e avisos de faturas em aberto.',
       'list': [
         'Gerencie múltiplos cartões de crédito',
         'Alertas de fechamento e vencimento de fatura',
@@ -64,8 +57,7 @@ const Map<String, dynamic> ptTranslations = {
     },
     '03': {
       'title': 'Relatórios Mensais & Análises',
-      'desc':
-          'Entenda seus hábitos de consumo com análises detalhadas, gráficos de categoria, medidor de liquidez e saldo projetado.',
+      'desc': 'Entenda seus hábitos de consumo com análises detalhadas, gráficos de categoria, medidor de liquidez e saldo projetado.',
       'list': [
         'Medidor de liquidez e saldo projetado para o fim do mês',
         'Gráficos visuais de distribuição por categoria',
@@ -74,8 +66,7 @@ const Map<String, dynamic> ptTranslations = {
     },
     '04': {
       'title': 'Preferências & Trava Biométrica',
-      'desc':
-          'Personalize sua experiência no aplicativo com temas dinâmicos e proteja suas finanças com autenticação biométrica.',
+      'desc': 'Personalize sua experiência no aplicativo com temas dinâmicos e proteja suas finanças com autenticação biométrica.',
       'list': [
         'Bloqueio biométrico nativo por FaceID / TouchID',
         'Temas de cores dinâmicos',
@@ -85,14 +76,11 @@ const Map<String, dynamic> ptTranslations = {
   },
   'faq_title': 'Perguntas Frequentes',
   'faq_1_q': 'Meus dados financeiros são enviados para algum servidor?',
-  'faq_1_a':
-      'Não. O Coinky é construído com foco 100% local. Suas transações, cartões e extratos permanecem armazenados em um banco de dados criptografado dentro do seu próprio aparelho. Não coletamos nem armazenamos suas transações.',
+  'faq_1_a': 'Não. O Coinky é construído com foco 100% local. Suas transações, cartões e extratos permanecem armazenados em um banco de dados criptografado dentro do seu próprio aparelho. Não coletamos nem armazenamos suas transações.',
   'faq_2_q': 'Como funciona a importação de extrato bancário OFX?',
-  'faq_2_a':
-      'A maioria dos bancos permite exportar o extrato mensal em formato .OFX. Basta baixar o arquivo do aplicativo/site do seu banco e abri-lo no Coinky. O app processa e remove duplicatas automaticamente.',
+  'faq_2_a': 'A maioria dos bancos permite exportar o extrato mensal em formato .OFX. Basta baixar o arquivo do aplicativo/site do seu banco e abri-lo no Coinky. O app processa e remove duplicatas automaticamente.',
   'faq_3_q': 'Posso proteger o app com Face ID ou Touch ID?',
-  'faq_3_a':
-      'Sim! O Coinky integra-se nativamente à autenticação do iOS (FaceID/TouchID) para que seus dados fiquem protegidos sempre que o app for fechado.',
+  'faq_3_a': 'Sim! O Coinky integra-se nativamente à autenticação do iOS (FaceID/TouchID) para que seus dados fiquem protegidos sempre que o app for fechado.',
   'cta_title': 'Pronto para Assumir o Controle das Suas Finanças com Privacidade?',
   'cta_subtitle':
       'Junte-se a milhares de pessoas gerenciando despesas com 100% de privacidade e sem assinaturas abusivas.',
