@@ -25,8 +25,10 @@ class Cta extends StatelessComponent {
           div(classes: 'cta-buttons', [
             ComingSoonButton(
               label: t(context, 'cta_btn'),
-              href: '#',
-              isComingSoon: true,
+              href: 'https://apps.apple.com/us/app/coinky-controle-financeiro/id6784496526',
+              isComingSoon: false,
+              target: Target.blank,
+              attributes: {'rel': 'noopener'},
               icon: svg(
                 viewBox: '0 0 24 24',
                 attributes: {'width': '20', 'height': '20', 'fill': 'currentColor'},

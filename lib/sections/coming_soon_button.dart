@@ -14,6 +14,8 @@ class ComingSoonButton extends StatelessComponent {
     this.isComingSoon = true,
     this.classes = 'btn btn-primary btn-lg',
     this.badgeTextKey = 'coming_soon',
+    this.target,
+    this.attributes,
     this.icon,
     super.key,
   });
@@ -23,15 +25,23 @@ class ComingSoonButton extends StatelessComponent {
   final bool isComingSoon;
   final String classes;
   final String badgeTextKey;
+  final Target? target;
+  final Map<String, String>? attributes;
   final Component? icon;
 
   @override
   Component build(BuildContext context) {
     if (!isComingSoon) {
-      return a(classes: classes, href: href, [
-        ?icon,
-        span([.text(label)]),
-      ]);
+      return a(
+        classes: classes,
+        href: href,
+        target: target,
+        attributes: attributes,
+        [
+          ?icon,
+          span([.text(label)]),
+        ],
+      );
     }
 
     return div(classes: 'coming-soon-btn-wrapper', [
