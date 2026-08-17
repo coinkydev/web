@@ -89,5 +89,5 @@ const Map<String, dynamic> ptTranslations = {
   'footer_privacy': 'Política de Privacidade',
   'footer_contact': 'Fale Conosco',
   'footer_terms': 'Termos de Uso',
-  'footer_rights': '© 2026 Coinky. Todos os direitos reservados.',
+  'footer_rights': '© 2026 Coinky Finanças. Todos os direitos reservados.',
 };

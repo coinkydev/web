@@ -92,5 +92,5 @@ const Map<String, dynamic> esTranslations = {
   'footer_privacy': 'Política de Privacidad',
   'footer_contact': 'Contacto',
   'footer_terms': 'Términos de Servicio',
-  'footer_rights': '© 2026 Coinky. Todos los derechos reservados.',
+  'footer_rights': '© 2026 Coinky Finanças. Todos los derechos reservados.',
 };
