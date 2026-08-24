@@ -1,6 +1,7 @@
 /// Portuguese translations for Coinky marketing site.
 const Map<String, dynamic> ptTranslations = {
   'nav_features': 'Funcionalidades',
+  'nav_reports': 'Relatórios',
   'nav_experience': 'Conheça o App',
   'nav_faq': 'Dúvidas',
   'nav_contact': 'Contato',
@@ -8,7 +9,8 @@ const Map<String, dynamic> ptTranslations = {
   'hero_badge': 'Gerenciador Financeiro 100% Offline e Privado',
   'hero_title_1': 'Domine Seu Dinheiro',
   'hero_title_2': 'Sem Abrir Mão da Sua Privacidade',
-  'hero_subtitle': 'Controle despesas, orçamentos por categoria, faturas de cartão de crédito e importe extratos bancários OFX facilmente—tudo salvo localmente no seu dispositivo.',
+  'hero_subtitle':
+      'Controle despesas, orçamentos por categoria, faturas de cartão de crédito e importe extratos bancários OFX facilmente—tudo salvo localmente no seu dispositivo.',
   'hero_cta_appstore': 'Baixar',
   'coming_soon': 'Em Breve',
   'hero_cta_tour': 'Ver Tour do App',
@@ -18,28 +20,54 @@ const Map<String, dynamic> ptTranslations = {
   'features_title': 'Construído para Total Controle Financeiro',
   'features_subtitle': 'Tudo o que você precisa para atingir suas metas financeiras com clareza e privacidade.',
   'feature_1_title': 'Faturas de Cartão de Crédito',
-  'feature_1_desc': 'Acompanhe datas de fechamento, vencimento, limites da fatura mensal e receba alertas sobre faturas anteriores pendentes.',
+  'feature_1_desc':
+      'Acompanhe datas de fechamento, vencimento, limites da fatura mensal e receba alertas sobre faturas anteriores pendentes.',
   'feature_2_title': 'Relatórios Mensais & Análises',
-  'feature_2_desc': 'Detalhamento claro por categorias, indicador de liquidez, saldo projetado para o fim do mês e gráficos financeiros interativos.',
+  'feature_2_desc':
+      'Detalhamento claro por categorias, indicador de liquidez, saldo projetado para o fim do mês e gráficos financeiros interativos.',
   'feature_3_title': 'Importação de Extrato OFX',
-  'feature_3_desc': 'Arraste e solte arquivos de extrato bancário (.OFX) para registrar transações automaticamente sem digitação manual.',
+  'feature_3_desc':
+      'Arraste e solte arquivos de extrato bancário (.OFX) para registrar transações automaticamente sem digitação manual.',
   'feature_4_title': 'Alertas Inteligentes de Orçamento',
-  'feature_4_desc': 'Defina limites de gastos por categoria e receba lembretes locais agendados ao se aproximar ou ultrapassar os limites.',
+  'feature_4_desc':
+      'Defina limites de gastos por categoria e receba lembretes locais agendados ao se aproximar ou ultrapassar os limites.',
   'feature_5_title': 'Modo Offline & Trava Biométrica',
-  'feature_5_desc': 'Seus dados financeiros permanecem estritamente salvos no seu aparelho com proteção biométrica nativa FaceID / TouchID.',
+  'feature_5_desc':
+      'Seus dados financeiros permanecem estritamente salvos no seu aparelho com proteção biométrica nativa FaceID / TouchID.',
   'feature_6_title': 'Multilíngue & Temas',
   'feature_6_desc':
       'Suporte completo para Inglês, Português e Espanhol, além de personalização de temas claro e escuro.',
+  'advanced_reports_badge': 'Inteligência Financeira Profunda',
+  'advanced_reports_title': 'Relatórios Avançados & Evolução Patrimonial',
+  'advanced_reports_subtitle':
+      'Descubra padrões nos seus gastos, acompanhe a evolução do seu patrimônio líquido, controle assinaturas recorrentes e classifique despesas—100% no seu dispositivo.',
+  'advanced_reports_card_1_title': 'Evolução do Patrimônio Líquido',
+  'advanced_reports_card_1_desc':
+      'Monitore a evolução histórica do seu saldo total e ativos vs passivos com gráficos detalhados.',
+  'advanced_reports_card_2_title': 'Tendência de Gastos & Comparativo',
+  'advanced_reports_card_2_desc':
+      'Compare a velocidade de gastos mês a mês, identifique variações e navegue pelo histórico completo.',
+  'advanced_reports_card_3_title': 'Gastos Recorrentes & Assinaturas',
+  'advanced_reports_card_3_desc':
+      'Identifique automaticamente cobranças periódicas e acompanhe a evolução dos custos de assinaturas.',
+  'advanced_reports_card_4_title': 'Essencial vs Estilo de Vida',
+  'advanced_reports_card_4_desc':
+      'Classifique despesas fixas essenciais e gastos discricionários para acelerar suas economias.',
+  'advanced_reports_card_5_title': 'Exposição de Moedas & Exportação CSV',
+  'advanced_reports_card_5_desc':
+      'Visualize a distribuição do seu patrimônio em múltiplas moedas e exporte seus relatórios com segurança em CSV.',
   'showcase_title': 'Design Desenhado para Simplicidade & Rapidez',
   'showcase_subtitle': 'Confira uma visão interativa da interface moderna do Coinky no iOS.',
   'showcase_tab_1': 'Visão Geral',
   'showcase_tab_2': 'Cartões de Crédito',
-  'showcase_tab_3': 'Relatórios & Análises',
-  'showcase_tab_4': 'Preferências & Segurança',
+  'showcase_tab_3': 'Relatórios Mensais',
+  'showcase_tab_4': 'Relatórios Avançados',
+  'showcase_tab_5': 'Preferências & Segurança',
   'showcase_data': {
     '01': {
       'title': 'Visão Geral do Painel',
-      'desc': 'Tenha um resumo instantâneo do seu saldo líquido, receitas vs despesas, contas a vencer e categorias.',
+      'desc':
+          'Tenha um resumo instantâneo do seu saldo líquido, receitas vs despesas, contas a vencer e categorias.',
       'list': [
         'Visão geral do saldo em tempo real',
         'Gerenciamento de transações deslizável',
@@ -48,7 +76,8 @@ const Map<String, dynamic> ptTranslations = {
     },
     '02': {
       'title': 'Ciclos de Fatura de Cartão',
-      'desc': 'Nunca mais perca a data de vencimento do seu cartão. Monitore fechamento, vencimento e avisos de faturas em aberto.',
+      'desc':
+          'Nunca mais perca a data de vencimento do seu cartão. Monitore fechamento, vencimento e avisos de faturas em aberto.',
       'list': [
         'Gerencie múltiplos cartões de crédito',
         'Alertas de fechamento e vencimento de fatura',
@@ -57,7 +86,8 @@ const Map<String, dynamic> ptTranslations = {
     },
     '03': {
       'title': 'Relatórios Mensais & Análises',
-      'desc': 'Entenda seus hábitos de consumo com análises detalhadas, gráficos de categoria, medidor de liquidez e saldo projetado.',
+      'desc':
+          'Entenda seus hábitos de consumo com análises detalhadas, gráficos de categoria, medidor de liquidez e saldo projetado.',
       'list': [
         'Medidor de liquidez e saldo projetado para o fim do mês',
         'Gráficos visuais de distribuição por categoria',
@@ -65,8 +95,20 @@ const Map<String, dynamic> ptTranslations = {
       ],
     },
     '04': {
+      'title': 'Relatórios Avançados & Inteligência Financeira',
+      'desc':
+          'Aprofunde-se na sua saúde financeira com evolução patrimonial, tendências de gastos, detecção de assinaturas recorrentes e classificação de despesas.',
+      'list': [
+        'Acompanhamento histórico da evolução do patrimônio',
+        'Comparativo mês a mês e tendências de gastos',
+        'Identificação de assinaturas e despesas recorrentes',
+        'Classificação entre gastos essenciais e discricionários',
+      ],
+    },
+    '05': {
       'title': 'Preferências & Trava Biométrica',
-      'desc': 'Personalize sua experiência no aplicativo com temas dinâmicos e proteja suas finanças com autenticação biométrica.',
+      'desc':
+          'Personalize sua experiência no aplicativo com temas dinâmicos e proteja suas finanças com autenticação biométrica.',
       'list': [
         'Bloqueio biométrico nativo por FaceID / TouchID',
         'Temas de cores dinâmicos',
@@ -76,11 +118,14 @@ const Map<String, dynamic> ptTranslations = {
   },
   'faq_title': 'Perguntas Frequentes',
   'faq_1_q': 'Meus dados financeiros são enviados para algum servidor?',
-  'faq_1_a': 'Não. O Coinky é construído com foco 100% local. Suas transações, cartões e extratos permanecem armazenados em um banco de dados criptografado dentro do seu próprio aparelho. Não coletamos nem armazenamos suas transações.',
+  'faq_1_a':
+      'Não. O Coinky é construído com foco 100% local. Suas transações, cartões e extratos permanecem armazenados em um banco de dados criptografado dentro do seu próprio aparelho. Não coletamos nem armazenamos suas transações.',
   'faq_2_q': 'Como funciona a importação de extrato bancário OFX?',
-  'faq_2_a': 'A maioria dos bancos permite exportar o extrato mensal em formato .OFX. Basta baixar o arquivo do aplicativo/site do seu banco e abri-lo no Coinky. O app processa e remove duplicatas automaticamente.',
+  'faq_2_a':
+      'A maioria dos bancos permite exportar o extrato mensal em formato .OFX. Basta baixar o arquivo do aplicativo/site do seu banco e abri-lo no Coinky. O app processa e remove duplicatas automaticamente.',
   'faq_3_q': 'Posso proteger o app com Face ID ou Touch ID?',
-  'faq_3_a': 'Sim! O Coinky integra-se nativamente à autenticação do iOS (FaceID/TouchID) para que seus dados fiquem protegidos sempre que o app for fechado.',
+  'faq_3_a':
+      'Sim! O Coinky integra-se nativamente à autenticação do iOS (FaceID/TouchID) para que seus dados fiquem protegidos sempre que o app for fechado.',
   'cta_title': 'Pronto para Assumir o Controle das Suas Finanças com Privacidade?',
   'cta_subtitle':
       'Junte-se a milhares de pessoas gerenciando despesas com 100% de privacidade e sem assinaturas abusivas.',

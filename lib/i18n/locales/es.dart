@@ -1,6 +1,7 @@
 /// Spanish translations for Coinky marketing site.
 const Map<String, dynamic> esTranslations = {
   'nav_features': 'Funcionalidades',
+  'nav_reports': 'Reportes',
   'nav_experience': 'Vista Previa',
   'nav_faq': 'Preguntas Frecuentes',
   'nav_contact': 'Contacto',
@@ -8,7 +9,8 @@ const Map<String, dynamic> esTranslations = {
   'hero_badge': 'Control de Dinero 100% Offline y Privado',
   'hero_title_1': 'Domina Tu Dinero',
   'hero_title_2': 'Sin Renunciar a Tu Privacidad',
-  'hero_subtitle': 'Rastrea gastos, controla presupuestos por categoría, gestiona ciclos de tarjetas de crédito e importa extractos bancarios OFX fácilmente—todo guardado localmente en tu dispositivo.',
+  'hero_subtitle':
+      'Rastrea gastos, controla presupuestos por categoría, gestiona ciclos de tarjetas de crédito e importa extractos bancarios OFX fácilmente—todo guardado localmente en tu dispositivo.',
   'hero_cta_appstore': 'Descargar',
   'coming_soon': 'Próximamente',
   'hero_cta_tour': 'Ver Tour de la App',
@@ -24,25 +26,48 @@ const Map<String, dynamic> esTranslations = {
   'feature_2_desc':
       'Desglose claro por categorías, estado de liquidez, saldo proyectado para fin de mes y gráficos interactivos.',
   'feature_3_title': 'Importación de Extracto Bancario OFX',
-  'feature_3_desc': 'Arrastra y suelta archivos de extractos bancarios (.OFX) para registrar transacciones automáticamente sin escribir a mano.',
+  'feature_3_desc':
+      'Arrastra y suelta archivos de extractos bancarios (.OFX) para registrar transacciones automáticamente sin escribir a mano.',
   'feature_4_title': 'Alertas de Presupuesto Inteligentes',
   'feature_4_desc':
       'Define límites de gasto por categoría y recibe recordatorios locales cuando te acerques o superes los límites.',
   'feature_5_title': 'Modo Offline y Bloqueo Biométrico',
-  'feature_5_desc': 'Tus registros financieros se almacenan estrictamente en tu dispositivo con protección biométrica nativa FaceID / TouchID.',
+  'feature_5_desc':
+      'Tus registros financieros se almacenan estrictamente en tu dispositivo con protección biométrica nativa FaceID / TouchID.',
   'feature_6_title': 'Multilingüe y Temas',
   'feature_6_desc':
       'Soporte completo en inglés, portugués y español, además de personalización de temas claros y oscuros.',
+  'advanced_reports_badge': 'Inteligencia Financiera Avanzada',
+  'advanced_reports_title': 'Reportes Avanzados y Evolución Patrimonial',
+  'advanced_reports_subtitle':
+      'Descubre patrones en tus gastos, sigue la evolución de tu patrimonio neto, controla suscripciones recurrentes y clasifica gastos—100% local en tu dispositivo.',
+  'advanced_reports_card_1_title': 'Evolución del Patrimonio Neto',
+  'advanced_reports_card_1_desc':
+      'Monitorea la evolución histórica de tu patrimonio y balance total con gráficos claros y precisos.',
+  'advanced_reports_card_2_title': 'Tendencias de Gasto y Comparación',
+  'advanced_reports_card_2_desc':
+      'Compara la velocidad de gasto mes a mes, analiza cambios y explora transacciones detalladas.',
+  'advanced_reports_card_3_title': 'Gastos Recurrentes y Suscripciones',
+  'advanced_reports_card_3_desc':
+      'Identifica automáticamente pagos periódicos y sigue las tendencias de costo de tus suscripciones.',
+  'advanced_reports_card_4_title': 'Esencial vs Discrecional',
+  'advanced_reports_card_4_desc':
+      'Clasifica gastos entre necesidades fijas y estilo de vida para optimizar tu capacidad de ahorro.',
+  'advanced_reports_card_5_title': 'Exposición de Monedas y Exportación CSV',
+  'advanced_reports_card_5_desc':
+      'Controla la diversificación multidivisa de tu dinero y exporta informes completos en CSV.',
   'showcase_title': 'Diseñado para la Simplicidad y Rapidez',
   'showcase_subtitle': 'Mira una vista interactiva de la interfaz pulida de Coinky en iOS.',
   'showcase_tab_1': 'Resumen General',
   'showcase_tab_2': 'Tarjetas de Crédito',
-  'showcase_tab_3': 'Reportes y Analíticas',
-  'showcase_tab_4': 'Preferencias y Bloqueo',
+  'showcase_tab_3': 'Reportes Mensuales',
+  'showcase_tab_4': 'Reportes Avanzados',
+  'showcase_tab_5': 'Preferencias y Bloqueo',
   'showcase_data': {
     '01': {
       'title': 'Resumen del Panel',
-      'desc': 'Obtén un vistazo instantáneo de tu saldo neto, ingresos vs gastos, facturas próximas y desglose por categorías.',
+      'desc':
+          'Obtén un vistazo instantáneo de tu saldo neto, ingresos vs gastos, facturas próximas y desglose por categorías.',
       'list': [
         'Resumen de saldo en tiempo real',
         'Gestión de transacciones deslizable',
@@ -51,7 +76,8 @@ const Map<String, dynamic> esTranslations = {
     },
     '02': {
       'title': 'Ciclos de Tarjetas de Crédito',
-      'desc': 'No vuelvas a olvidar la fecha de pago de tu tarjeta. Monitorea cierres, vencimientos y alertas de pago.',
+      'desc':
+          'No vuelvas a olvidar la fecha de pago de tu tarjeta. Monitorea cierres, vencimientos y alertas de pago.',
       'list': [
         'Gestiona múltiples tarjetas de crédito',
         'Alertas de cierre y vencimiento de estado de cuenta',
@@ -60,7 +86,8 @@ const Map<String, dynamic> esTranslations = {
     },
     '03': {
       'title': 'Reportes Mensuales y Analíticas',
-      'desc': 'Comprende tus hábitos de gasto con análisis profundos, gráficos por categoría, medidor de liquidez y saldo proyectado.',
+      'desc':
+          'Comprende tus hábitos de gasto con análisis profundos, gráficos por categoría, medidor de liquidez y saldo proyectado.',
       'list': [
         'Medidor de liquidez y saldo proyectado a fin de mes',
         'Gráficos visuales de distribución por categoría',
@@ -68,8 +95,20 @@ const Map<String, dynamic> esTranslations = {
       ],
     },
     '04': {
+      'title': 'Reportes Avanzados y Analíticas Patrimoniales',
+      'desc':
+          'Profundiza en tu salud financiera con evolución de patrimonio neto, tendencias de gasto, detección de suscripciones y clasificación de gastos.',
+      'list': [
+        'Seguimiento histórico de la evolución del patrimonio',
+        'Comparación mensual y tendencias de gasto',
+        'Detección de pagos recurrentes y suscripciones',
+        'Clasificación entre gastos esenciales y discrecionales',
+      ],
+    },
+    '05': {
       'title': 'Preferencias y Bloqueo Biométrico',
-      'desc': 'Personaliza tu experiencia en la aplicación con temas dinámicos y protege tu privacidad financiera con biometría.',
+      'desc':
+          'Personaliza tu experiencia en la aplicación con temas dinámicos y protege tu privacidad financiera con biometría.',
       'list': [
         'Bloqueio biométrico nativo por FaceID / TouchID',
         'Temas de color dinámicos',
@@ -79,11 +118,14 @@ const Map<String, dynamic> esTranslations = {
   },
   'faq_title': 'Preguntas Frecuentes',
   'faq_1_q': '¿Mis datos financieros se envían a algún servidor?',
-  'faq_1_a': 'No. Coinky está diseñado prioritariamente local. Tus transacciones, tarjetas y extractos se guardan en una base de datos encriptada en tu propio dispositivo. No recopilamos ni almacenamos tus datos.',
+  'faq_1_a':
+      'No. Coinky está diseñado prioritariamente local. Tus transacciones, tarjetas y extractos se guardan en una base de datos encriptada en tu propio dispositivo. No recopilamos ni almacenamos tus datos.',
   'faq_2_q': '¿Cómo funciona la importación de extractos OFX?',
-  'faq_2_a': 'La mayoría de los bancos permiten exportar tu extracto mensual en formato .OFX. Simplemente descarga el archivo e impórtalo en Coinky. La app lo procesa y elimina duplicados al instante.',
+  'faq_2_a':
+      'La mayoría de los bancos permiten exportar tu extracto mensual en formato .OFX. Simplemente descarga el archivo e impórtalo en Coinky. La app lo procesa y elimina duplicados al instante.',
   'faq_3_q': '¿Puedo bloquear la app con Face ID o Touch ID?',
-  'faq_3_a': '¡Sí! Coinky se integra nativamente con la autenticación de iOS (FaceID/TouchID) para mantener tus números protegidos cuando la app está cerrada.',
+  'faq_3_a':
+      '¡Sí! Coinky se integra nativamente con la autenticación de iOS (FaceID/TouchID) para mantener tus números protegidos cuando la app está cerrada.',
   'cta_title': '¿Listo para Tomar el Control de Tu Dinero de Forma Privada?',
   'cta_subtitle':
       'Únete a miles de usuarios que gestionan sus gastos con 100% de privacidad y sin suscripciones recurrentes.',

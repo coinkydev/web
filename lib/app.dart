@@ -122,6 +122,7 @@ class AppState extends State<App> {
           else ...[
             const Hero(),
             const Features(),
+            const AdvancedReportsSection(),
             const Showcase(),
             const Faq(),
             const Cta(),

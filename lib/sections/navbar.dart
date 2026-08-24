@@ -118,6 +118,11 @@ class _NavbarState extends State<Navbar> {
             [.text(t(context, 'nav_features'))],
           ),
           a(
+            href: '#reports',
+            onClick: () => scrollTo('reports'),
+            [.text(t(context, 'nav_reports'))],
+          ),
+          a(
             href: '#showcase',
             onClick: () => scrollTo('showcase'),
             [.text(t(context, 'nav_experience'))],
@@ -240,6 +245,11 @@ class _NavbarState extends State<Navbar> {
               href: '#features',
               onClick: () => scrollTo('features'),
               [.text(t(context, 'nav_features'))],
+            ),
+            a(
+              href: '#reports',
+              onClick: () => scrollTo('reports'),
+              [.text(t(context, 'nav_reports'))],
             ),
             a(
               href: '#showcase',

@@ -15,7 +15,8 @@ const _tabs = [
   _Tab(key: '01', labelKey: 'showcase_tab_1', image: './assets/screenshots/01_dashboard.png'),
   _Tab(key: '02', labelKey: 'showcase_tab_2', image: './assets/screenshots/02_cards.png'),
   _Tab(key: '03', labelKey: 'showcase_tab_3', image: './assets/screenshots/03_reports.png'),
-  _Tab(key: '04', labelKey: 'showcase_tab_4', image: './assets/screenshots/04_settings.png'),
+  _Tab(key: '04', labelKey: 'showcase_tab_4', image: './assets/screenshots/04_advanced_reports.png'),
+  _Tab(key: '05', labelKey: 'showcase_tab_5', image: './assets/screenshots/05_settings.png'),
 ];
 
 /// Interactive app showcase: tab switcher over screenshots, driven by local
