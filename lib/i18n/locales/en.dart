@@ -9,8 +9,7 @@ const Map<String, dynamic> enTranslations = {
   'hero_badge': '100% Offline & Private Money Tracker',
   'hero_title_1': 'Master Your Money',
   'hero_title_2': 'Without Giving Up Your Privacy',
-  'hero_subtitle':
-      'Track expenses, control category budgets, manage credit card statement cycles, and import bank OFX statements effortlessly—all stored locally on your device.',
+  'hero_subtitle': 'Track expenses, control category budgets, manage credit card statement cycles, and import bank OFX statements effortlessly—all stored locally on your device.',
   'hero_cta_appstore': 'Download',
   'coming_soon': 'Coming Soon',
   'hero_cta_tour': 'See App Tour',
@@ -32,15 +31,13 @@ const Map<String, dynamic> enTranslations = {
   'feature_4_desc':
       'Set spending caps per category and receive scheduled local reminders when approaching or exceeding limits.',
   'feature_5_title': 'Offline & Biometric Lock',
-  'feature_5_desc':
-      'Your financial records stay strictly stored locally on your device with native FaceID / TouchID biometric protection.',
+  'feature_5_desc': 'Your financial records stay strictly stored locally on your device with native FaceID / TouchID biometric protection.',
   'feature_6_title': 'Multilingual & Themes',
   'feature_6_desc':
       'Full support for English, Portuguese, and Spanish, plus dynamic light and dark theme customizations.',
   'advanced_reports_badge': 'Deep Financial Intelligence',
   'advanced_reports_title': 'Advanced Reports & Wealth Evolution',
-  'advanced_reports_subtitle':
-      'Uncover hidden patterns in your spending, track net worth progression, analyze recurring subscriptions, and classify expenses—100% locally on your device.',
+  'advanced_reports_subtitle': 'Uncover hidden patterns in your spending, track net worth progression, analyze recurring subscriptions, and classify expenses—100% locally on your device.',
   'advanced_reports_card_1_title': 'Net Worth Evolution',
   'advanced_reports_card_1_desc':
       'Track your total asset and liability progression over time with historical net worth charts.',
@@ -66,8 +63,7 @@ const Map<String, dynamic> enTranslations = {
   'showcase_data': {
     '01': {
       'title': 'Dashboard Overview',
-      'desc':
-          'Get an instant snap of your net balance, total income vs expenses, upcoming bills, and quick category breakdowns.',
+      'desc': 'Get an instant snap of your net balance, total income vs expenses, upcoming bills, and quick category breakdowns.',
       'list': [
         'Instant real-time balance overview',
         'Slidable transaction management',
@@ -86,8 +82,7 @@ const Map<String, dynamic> enTranslations = {
     },
     '03': {
       'title': 'Monthly Reports & Analytics',
-      'desc':
-          'Understand your spending habits with deep analytics, category breakdowns, liquidity indicators, and projected balances.',
+      'desc': 'Understand your spending habits with deep analytics, category breakdowns, liquidity indicators, and projected balances.',
       'list': [
         'Liquidity meter & projected end-of-month balance',
         'Visual category distribution charts',
@@ -96,8 +91,7 @@ const Map<String, dynamic> enTranslations = {
     },
     '04': {
       'title': 'Advanced Reports & Wealth Analytics',
-      'desc':
-          'Deep-dive into your financial health with multi-month trends, net worth tracking, recurring spend detection, and expense classification.',
+      'desc': 'Deep-dive into your financial health with multi-month trends, net worth tracking, recurring spend detection, and expense classification.',
       'list': [
         'Historical net worth progression tracking',
         'Month-over-month trend and period comparisons',
@@ -107,8 +101,7 @@ const Map<String, dynamic> enTranslations = {
     },
     '05': {
       'title': 'Preferences & Biometric Lock',
-      'desc':
-          'Customize your application experience with dynamic themes and protect your financial privacy with biometric authentication.',
+      'desc': 'Customize your application experience with dynamic themes and protect your financial privacy with biometric authentication.',
       'list': [
         'Native FaceID / TouchID biometric app lock',
         'Dynamic color themes',
@@ -118,14 +111,11 @@ const Map<String, dynamic> enTranslations = {
   },
   'faq_title': 'Frequently Asked Questions',
   'faq_1_q': 'Is my financial data uploaded to any server?',
-  'faq_1_a':
-      'No. Coinky is built local-first. Your transactions, credit cards, and bank statements remain 100% stored in an encrypted local database on your device. We do not collect or store your private financial transactions.',
+  'faq_1_a': 'No. Coinky is built local-first. Your transactions, credit cards, and bank statements remain 100% stored in an encrypted local database on your device. We do not collect or store your private financial transactions.',
   'faq_2_q': 'How does OFX bank import work?',
-  'faq_2_a':
-      'Most banks allow you to export your monthly statement as an .OFX file. Simply download the file from your bank app/web portal and share/open it in Coinky. The app automatically parses and deduplicates transactions instantly.',
+  'faq_2_a': 'Most banks allow you to export your monthly statement as an .OFX file. Simply download the file from your bank app/web portal and share/open it in Coinky. The app automatically parses and deduplicates transactions instantly.',
   'faq_3_q': 'Can I lock the app with Face ID or Touch ID?',
-  'faq_3_a':
-      'Yes! Coinky integrates natively with iOS local authentication (FaceID/TouchID) so your sensitive numbers remain hidden from prying eyes whenever the app is closed.',
+  'faq_3_a': 'Yes! Coinky integrates natively with iOS local authentication (FaceID/TouchID) so your sensitive numbers remain hidden from prying eyes whenever the app is closed.',
   'cta_title': 'Ready to Take Control of Your Money Privately?',
   'cta_subtitle': 'Join thousands of users managing expenses with 100% privacy and zero subscription traps.',
   'cta_btn': 'Download for iOS',
