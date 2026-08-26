@@ -15,6 +15,10 @@ const _faqs = [
   _FaqData(id: 'faq_1', questionKey: 'faq_1_q', answerKey: 'faq_1_a'),
   _FaqData(id: 'faq_2', questionKey: 'faq_2_q', answerKey: 'faq_2_a'),
   _FaqData(id: 'faq_3', questionKey: 'faq_3_q', answerKey: 'faq_3_a'),
+  _FaqData(id: 'faq_4', questionKey: 'faq_4_q', answerKey: 'faq_4_a'),
+  _FaqData(id: 'faq_5', questionKey: 'faq_5_q', answerKey: 'faq_5_a'),
+  _FaqData(id: 'faq_6', questionKey: 'faq_6_q', answerKey: 'faq_6_a'),
+  _FaqData(id: 'faq_7', questionKey: 'faq_7_q', answerKey: 'faq_7_a'),
 ];
 
 /// FAQ accordion, with local state tracking which single item is open at a
