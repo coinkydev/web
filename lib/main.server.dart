@@ -8,6 +8,7 @@ import 'package:jaspr/dom.dart';
 // Server-specific Jaspr import.
 import 'package:jaspr/server.dart';
 
+import 'analytics/analytics.dart';
 // Imports the [App] component.
 import 'app.dart';
 
@@ -49,6 +50,7 @@ void main() {
         // Site stylesheet, copied verbatim from the original site (do not edit inline;
         // edit web/style.css instead, kept in sync with ../style.css).
         link(rel: 'stylesheet', href: 'style.css'),
+        ...analyticsHead(),
       ],
       body: App(),
     ),
