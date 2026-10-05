@@ -40,8 +40,8 @@ class PrivacyPolicy extends StatelessComponent {
             p(classes: 'privacy-updated', [
               .text(
                 lang == 'pt'
-                    ? 'Última atualização: 28 de julho de 2026'
-                    : (lang == 'es' ? 'Última actualización: 28 de julio de 2026' : 'Last updated: July 28, 2026'),
+                    ? 'Última atualização: 4 de outubro de 2026'
+                    : (lang == 'es' ? 'Última actualización: 4 de octubre de 2026' : 'Last updated: October 4, 2026'),
               ),
             ]),
           ]),
@@ -116,7 +116,13 @@ class PrivacyPolicy extends StatelessComponent {
           'We may update this policy from time to time. Continued use of the App after changes constitutes acceptance of the updated policy.',
         ),
       ]),
-      h2([.text('7. Contact')]),
+      h2([.text('7. This website')]),
+      p([
+        .text(
+          'This website (not the App) uses Umami, a cookieless analytics service, to count visits and a few anonymous clicks: the App Store button, the language switch and which FAQ questions are opened. It sets no cookies, does not store your IP address and collects no personal data. We only see totals, such as visits per day, referring websites, country, browser and device type.',
+        ),
+      ]),
+      h2([.text('8. Contact')]),
       p([
         .text('Questions about this policy: '),
         a(
@@ -188,7 +194,13 @@ class PrivacyPolicy extends StatelessComponent {
           'Podemos atualizar esta política periodicamente. O uso continuado do Aplicativo após alterações constitui aceitação da política atualizada.',
         ),
       ]),
-      h2([.text('7. Contato')]),
+      h2([.text('7. Este site')]),
+      p([
+        .text(
+          'Este site (não o Aplicativo) usa o Umami, um serviço de análise sem cookies, para contar visitas e alguns cliques anônimos: o botão da App Store, a troca de idioma e quais perguntas do FAQ são abertas. Ele não usa cookies, não armazena seu endereço IP e não coleta dados pessoais. Vemos apenas totais, como visitas por dia, sites de origem, país, navegador e tipo de dispositivo.',
+        ),
+      ]),
+      h2([.text('8. Contato')]),
       p([
         .text('Dúvidas sobre esta política: '),
         a(
@@ -260,7 +272,13 @@ class PrivacyPolicy extends StatelessComponent {
           'Podemos actualizar esta política de vez en cuando. El uso continuado de la Aplicación después de los cambios constituye la aceptación de la política actualizada.',
         ),
       ]),
-      h2([.text('7. Contacto')]),
+      h2([.text('7. Este sitio web')]),
+      p([
+        .text(
+          'Este sitio web (no la Aplicación) utiliza Umami, un servicio de análisis sin cookies, para contar visitas y algunos clics anónimos: el botón de la App Store, el cambio de idioma y qué preguntas frecuentes se abren. No utiliza cookies, no almacena su dirección IP y no recopila datos personales. Solo vemos totales, como visitas por día, sitios de referencia, país, navegador y tipo de dispositivo.',
+        ),
+      ]),
+      h2([.text('8. Contacto')]),
       p([
         .text('Preguntas sobre esta política: '),
         a(
