@@ -1,6 +1,7 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 
+import '../analytics/analytics.dart';
 import '../i18n/i18n.dart';
 import 'coming_soon_button.dart';
 
@@ -25,10 +26,11 @@ class Cta extends StatelessComponent {
           div(classes: 'cta-buttons', [
             ComingSoonButton(
               label: t(context, 'cta_btn'),
-              href: 'https://apps.apple.com/us/app/coinky-controle-financeiro/id6784496526',
+              href: 'https://apps.apple.com/app/apple-store/id6784496526?pt=129088495&ct=website&mt=8',
               isComingSoon: false,
               target: Target.blank,
               attributes: {'rel': 'noopener'},
+              onTap: () => trackEvent('store_click', {'store': 'ios'}),
               icon: svg(
                 viewBox: '0 0 24 24',
                 attributes: {'width': '20', 'height': '20', 'fill': 'currentColor'},

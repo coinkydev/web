@@ -17,6 +17,7 @@ class ComingSoonButton extends StatelessComponent {
     this.target,
     this.attributes,
     this.icon,
+    this.onTap,
     super.key,
   });
 
@@ -29,6 +30,10 @@ class ComingSoonButton extends StatelessComponent {
   final Map<String, String>? attributes;
   final Component? icon;
 
+  /// Called when the (enabled) link is clicked. Unlike `onClick`, this does
+  /// not cancel the navigation.
+  final void Function()? onTap;
+
   @override
   Component build(BuildContext context) {
     if (!isComingSoon) {
@@ -37,6 +42,7 @@ class ComingSoonButton extends StatelessComponent {
         href: href,
         target: target,
         attributes: attributes,
+        events: onTap == null ? null : {'click': (_) => onTap!()},
         [
           ?icon,
           span([.text(label)]),

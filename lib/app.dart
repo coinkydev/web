@@ -2,6 +2,7 @@ import 'package:jaspr/jaspr.dart';
 import 'package:universal_web/js_interop.dart';
 import 'package:universal_web/web.dart' as web;
 
+import 'analytics/analytics.dart';
 import 'i18n/i18n.dart';
 import 'sections/sections.dart';
 
@@ -86,6 +87,7 @@ class AppState extends State<App> {
   void _setLanguage(String lang) {
     if (lang == _lang) return;
     setState(() => _lang = lang);
+    trackEvent('language_change', {'lang': lang});
     if (kIsWeb) {
       web.window.localStorage.setItem(langStorageKey, lang);
     }
