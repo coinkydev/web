@@ -27,6 +27,15 @@ server required at runtime.
   up `Document` (title, meta description, font preconnects, `style.css`
   link) and mount `App`.
 
+## Analytics
+
+Cookieless [Umami](https://umami.is) analytics, added only when the build gets
+`--dart-define UMAMI_WEBSITE_ID=<id>`. CI passes it from the
+`UMAMI_WEBSITE_ID` repository secret, so local builds track nothing. Report
+events with `trackEvent(name, data)` from `lib/analytics/analytics.dart`. Event
+data must never include personal information. Any new event also has to be
+described in the privacy policy (`lib/sections/privacy_policy.dart`).
+
 ## Running the project
 
 Run your project using `jaspr serve`.
