@@ -2,7 +2,7 @@
 ///
 /// The tracking script is only added to the page when the build is given
 /// `--dart-define UMAMI_WEBSITE_ID=<id>` (set in CI from the repository
-/// variable of the same name), so local builds never report anything.
+/// secret of the same name), so local builds never report anything.
 ///
 /// Events must never carry personal data: only fixed names and short,
 /// non-identifying properties such as `store: 'ios'`.
