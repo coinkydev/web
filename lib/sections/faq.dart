@@ -1,6 +1,7 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 
+import '../analytics/analytics.dart';
 import '../i18n/i18n.dart';
 
 class _FaqData {
@@ -47,7 +48,11 @@ class _FaqState extends State<Faq> {
               div(classes: faq.id == _openId ? 'faq-item glass-card active' : 'faq-item glass-card', [
                 button(
                   classes: 'faq-question',
-                  onClick: () => setState(() => _openId = _openId == faq.id ? null : faq.id),
+                  onClick: () {
+                    final opening = _openId != faq.id;
+                    setState(() => _openId = opening ? faq.id : null);
+                    if (opening) trackEvent('faq_open', {'question': faq.id});
+                  },
                   [
                     span([.text(t(context, faq.questionKey))]),
                     span(classes: 'faq-icon', [.text('+')]),

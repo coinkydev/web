@@ -1,6 +1,7 @@
 import 'package:jaspr/dom.dart';
 import 'package:jaspr/jaspr.dart';
 
+import '../analytics/analytics.dart';
 import '../i18n/i18n.dart';
 import 'coming_soon_button.dart';
 
@@ -29,6 +30,7 @@ class Cta extends StatelessComponent {
               isComingSoon: false,
               target: Target.blank,
               attributes: {'rel': 'noopener'},
+              onTap: () => trackEvent('store_click', {'store': 'ios'}),
               icon: svg(
                 viewBox: '0 0 24 24',
                 attributes: {'width': '20', 'height': '20', 'fill': 'currentColor'},
